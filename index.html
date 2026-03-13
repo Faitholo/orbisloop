@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrbisLoop — Infrastructure for the Circular Economy</title>
+  <meta name="description" content="OrbisLoop transforms waste into reusable supply by connecting businesses, recyclers, and logistics networks through intelligent circular infrastructure.">
+  <meta name="keywords" content="circular economy, waste management, sustainability, AI, recycling, supply chain, climate tech, ESG">
+  <meta name="author" content="OrbisLoop">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OrbisLoop — Infrastructure for the Circular Economy">
+  <meta property="og:description" content="OrbisLoop transforms waste into reusable supply by connecting businesses, recyclers, and logistics networks through intelligent circular infrastructure.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://orbisloop.com">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OrbisLoop — Infrastructure for the Circular Economy">
+  <meta name="twitter:description" content="OrbisLoop transforms waste into reusable supply by connecting businesses, recyclers, and logistics networks through intelligent circular infrastructure.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="public/image_3fe86ce7.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <img class="nav-logo-icon" src="public/image_3fe86ce7.png" alt="OrbisLoop logo" />
+        <span>OrbisLoop</span>
+      </a>
+      <div class="nav-links" id="nav-links">
+        <a href="#solution" class="nav-link">About</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#partners" class="nav-link">Partners</a>
+        <a href="#waitlist" class="nav-link nav-cta">Join Waitlist</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content fade-up">
+        <h1 class="hero-title">Powering the World's Circular Supply Chains</h1>
+        <p class="hero-subtitle">OrbisLoop transforms waste into reusable supply by connecting businesses, recyclers, and logistics networks through intelligent circular infrastructure.</p>
+        <div class="hero-buttons">
+          <a href="#waitlist" class="btn btn-primary">Join the Waitlist</a>
+          <a href="#pilot" class="btn btn-outline">Apply as Pilot Partner</a>
+        </div>
+        <p class="hero-credibility">Launching pilot networks in the supermarket sector.</p>
+        <div class="hero-badges">
+          <span class="badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
+            Circular Economy Infrastructure
+          </span>
+          <span class="badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5.5-4 7.5L12 20l-3-3.5C7 14.5 5 12 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2"/><path d="M2 20h20"/></svg>
+            AI Waste Intelligence
+          </span>
+          <span class="badge">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            Logistics Coordination Layer
+          </span>
+        </div>
+      </div>
+      <div class="hero-illustration fade-up delay-1">
+        <svg viewBox="0 0 480 400" xmlns="http://www.w3.org/2000/svg" class="hero-svg">
+          <defs>
+            <marker id="arrowG" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#10B981"/>
+            </marker>
+            <marker id="arrowB" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+              <path d="M 0 0 L 10 5 L 0 10 z" fill="#0EA5E9"/>
+            </marker>
+            <linearGradient id="heroGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#10B981" stop-opacity="0.08"/>
+              <stop offset="100%" stop-color="#0EA5E9" stop-opacity="0.08"/>
+            </linearGradient>
+          </defs>
+          <!-- Background circles -->
+          <circle cx="240" cy="200" r="190" fill="url(#heroGrad)"/>
+          <circle cx="240" cy="200" r="165" fill="none" stroke="#10B981" stroke-width="0.5" stroke-dasharray="8 4" opacity="0.3" class="spin-slow"/>
+          <circle cx="240" cy="200" r="140" fill="none" stroke="#0EA5E9" stroke-width="0.5" stroke-dasharray="4 8" opacity="0.25" class="spin-reverse"/>
+          <!-- Central hub -->
+          <circle cx="240" cy="200" r="52" fill="#064E3B" opacity="0.08" stroke="#064E3B" stroke-width="2"/>
+          <text x="240" y="195" text-anchor="middle" fill="#064E3B" font-size="13" font-weight="700" font-family="Inter, sans-serif">OrbisLoop</text>
+          <text x="240" y="212" text-anchor="middle" fill="#064E3B" font-size="10" font-family="Inter, sans-serif" opacity="0.7">Platform</text>
+          <!-- Node: Businesses (top) -->
+          <circle cx="240" cy="55" r="38" fill="#10B981" opacity="0.1" stroke="#10B981" stroke-width="1.5"/>
+          <text x="240" y="58" text-anchor="middle" fill="#064E3B" font-size="11" font-weight="600" font-family="Inter, sans-serif">Businesses</text>
+          <!-- Node: Recyclers (right) -->
+          <circle cx="400" cy="200" r="38" fill="#0EA5E9" opacity="0.1" stroke="#0EA5E9" stroke-width="1.5"/>
+          <text x="400" y="203" text-anchor="middle" fill="#0369A1" font-size="11" font-weight="600" font-family="Inter, sans-serif">Recyclers</text>
+          <!-- Node: New Supply Chains (bottom) -->
+          <circle cx="240" cy="345" r="38" fill="#10B981" opacity="0.1" stroke="#10B981" stroke-width="1.5"/>
+          <text x="240" y="340" text-anchor="middle" fill="#064E3B" font-size="10" font-weight="600" font-family="Inter, sans-serif">New Supply</text>
+          <text x="240" y="354" text-anchor="middle" fill="#064E3B" font-size="10" font-weight="600" font-family="Inter, sans-serif">Chains</text>
+          <!-- Node: Logistics (left) -->
+          <circle cx="80" cy="200" r="38" fill="#0EA5E9" opacity="0.1" stroke="#0EA5E9" stroke-width="1.5"/>
+          <text x="80" y="203" text-anchor="middle" fill="#0369A1" font-size="11" font-weight="600" font-family="Inter, sans-serif">Logistics</text>
+          <!-- Connecting arrows -->
+          <path d="M240 93 L240 148" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arrowG)"/>
+          <path d="M292 200 L362 200" stroke="#0EA5E9" stroke-width="2" fill="none" marker-end="url(#arrowB)"/>
+          <path d="M382 238 Q340 310 278 340" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arrowG)"/>
+          <path d="M202 340 Q140 310 98 238" stroke="#0EA5E9" stroke-width="2" fill="none" marker-end="url(#arrowB)"/>
+          <path d="M98 162 Q140 90 202 60" stroke="#10B981" stroke-width="2" fill="none" marker-end="url(#arrowG)"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOCIAL PROOF / WAITLIST COUNTER ===== -->
+  <section class="social-proof" id="social-proof">
+    <div class="container">
+      <div class="social-proof-inner fade-up">
+        <p class="social-proof-text">
+          Join the first <span class="counter" data-target="100">0</span> early supporters building the future of circular supply chains.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROBLEM SECTION ===== -->
+  <section class="section section-white" id="problem">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">The Challenge</span>
+        <h2 class="section-title">The Global Waste Problem</h2>
+      </div>
+      <div class="problem-content fade-up">
+        <p>Businesses generate billions of tons of surplus food, packaging, and materials each year. Much of it ends up in landfills — not because it cannot be reused, but because there is no intelligent infrastructure connecting waste producers with recovery networks.</p>
+        <p>Without coordination, valuable materials are lost and sustainability goals remain difficult to measure.</p>
+      </div>
+      <div class="problem-stats fade-up">
+        <div class="stat-card">
+          <span class="stat-number counter-stat" data-target="2.12" data-suffix="B" data-decimals="2">0</span>
+          <span class="stat-label">Tons of waste generated yearly</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number counter-stat" data-target="80" data-suffix="%" data-decimals="0">0</span>
+          <span class="stat-label">Recoverable but lost to landfill</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number counter-stat" data-prefix="$" data-target="100" data-suffix="B+" data-decimals="0">0</span>
+          <span class="stat-label">In lost recoverable value</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLUTION SECTION ===== -->
+  <section class="section section-light" id="solution">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">The Solution</span>
+        <h2 class="section-title">Introducing OrbisLoop</h2>
+      </div>
+      <div class="solution-content fade-up">
+        <p class="solution-lead">OrbisLoop is a digital infrastructure platform transforming global waste into high-value circular supply chains.</p>
+        <p>Unlike reactive recycling apps, OrbisLoop's Waste Intelligence Engine uses AI to predict surplus food and material waste before it occurs.</p>
+        <p>By combining a circular marketplace with a Smart Logistics Layer, OrbisLoop coordinates waste-to-resource recovery at scale.</p>
+      </div>
+      <div class="solution-pillars fade-up">
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </div>
+          <h3>Predictive</h3>
+          <p>AI forecasts waste before it happens</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Connected</h3>
+          <p>Links producers, recyclers, and logistics</p>
+        </div>
+        <div class="pillar-card">
+          <div class="pillar-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3>Scalable</h3>
+          <p>Designed for global infrastructure scale</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section section-white" id="how-it-works">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Process</span>
+        <h2 class="section-title">How OrbisLoop Works</h2>
+      </div>
+      <div class="steps fade-up">
+        <div class="step">
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+          </div>
+          <div class="step-number">1</div>
+          <h3 class="step-title">Businesses list surplus materials</h3>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><path d="M9 15l2 2 4-4"/></svg>
+          </div>
+          <div class="step-number">2</div>
+          <h3 class="step-title">AI assigns Digital Material Passports</h3>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="8.5" cy="7" r="4"/><path d="M20 8v6M23 11h-6"/></svg>
+          </div>
+          <div class="step-number">3</div>
+          <h3 class="step-title">Recyclers and refurbishers claim materials</h3>
+        </div>
+        <div class="step-arrow">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div class="step-number">4</div>
+          <h3 class="step-title">Smart logistics coordinates pickup and recovery</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATFORM FEATURES ===== -->
+  <section class="section section-light" id="features">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Platform</span>
+        <h2 class="section-title">Platform Features</h2>
+      </div>
+      <div class="features-grid fade-up">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5.5-4 7.5L12 20l-3-3.5C7 14.5 5 12 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2"/></svg>
+          </div>
+          <h3>Waste Intelligence Engine</h3>
+          <p>AI predicts surplus waste and recommends recovery paths.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </div>
+          <h3>Circular Marketplace</h3>
+          <p>Businesses connect with recyclers and refurbishers.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Smart Logistics Layer</h3>
+          <p>Optimized pickup and routing for material recovery.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <h3>Impact Certification</h3>
+          <p>Verified sustainability metrics for ESG reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIMPLE PLATFORM DIAGRAM ===== -->
+  <section class="section section-white" id="platform-diagram">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Flow</span>
+        <h2 class="section-title">How Materials Flow</h2>
+      </div>
+      <div class="diagram-flow fade-up">
+        <div class="diagram-node">
+          <div class="diagram-node-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+          </div>
+          <span>Businesses</span>
+        </div>
+        <div class="diagram-arrow">
+          <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0 8h28" stroke="#10B981" stroke-width="2"/><path d="M24 3l6 5-6 5" stroke="#10B981" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="diagram-node node-primary">
+          <div class="diagram-node-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
+          </div>
+          <span>OrbisLoop Platform</span>
+        </div>
+        <div class="diagram-arrow">
+          <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0 8h28" stroke="#0EA5E9" stroke-width="2"/><path d="M24 3l6 5-6 5" stroke="#0EA5E9" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="diagram-node">
+          <div class="diagram-node-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
+          </div>
+          <span>Recyclers</span>
+        </div>
+        <div class="diagram-arrow">
+          <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0 8h28" stroke="#10B981" stroke-width="2"/><path d="M24 3l6 5-6 5" stroke="#10B981" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="diagram-node">
+          <div class="diagram-node-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <span>Refurbishers</span>
+        </div>
+        <div class="diagram-arrow">
+          <svg width="32" height="16" viewBox="0 0 32 16"><path d="M0 8h28" stroke="#0EA5E9" stroke-width="2"/><path d="M24 3l6 5-6 5" stroke="#0EA5E9" stroke-width="2" fill="none"/></svg>
+        </div>
+        <div class="diagram-node">
+          <div class="diagram-node-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <span>New Circular Supply Chains</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECHNOLOGY ARCHITECTURE ===== -->
+  <section class="section section-light" id="tech-architecture">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Architecture</span>
+        <h2 class="section-title">How OrbisLoop Works Behind the Scenes</h2>
+      </div>
+      <div class="tech-intro fade-up">
+        <p>OrbisLoop is designed as a modular infrastructure layer that coordinates circular supply chains across businesses, recyclers, and logistics networks.</p>
+        <p>The platform combines AI prediction, marketplace coordination, and logistics optimization into a unified circular economy operating system.</p>
+      </div>
+      <div class="arch-diagram fade-up">
+        <div class="arch-layer arch-top">
+          <div class="arch-layer-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg>
+            <span>Businesses / Supermarkets</span>
+          </div>
+        </div>
+        <div class="arch-connector">
+          <svg width="2" height="32"><line x1="1" y1="0" x2="1" y2="32" stroke="#10B981" stroke-width="2" stroke-dasharray="4 3"/></svg>
+          <svg width="12" height="8" class="arch-arrow-svg"><path d="M0 0 L6 8 L12 0" fill="#10B981"/></svg>
+        </div>
+        <div class="arch-layer">
+          <div class="arch-layer-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5.5-4 7.5L12 20l-3-3.5C7 14.5 5 12 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2"/></svg>
+            <span>Waste Intelligence Engine (AI Prediction)</span>
+          </div>
+          <p class="arch-desc">AI predicts surplus materials and waste streams before they occur.</p>
+        </div>
+        <div class="arch-connector">
+          <svg width="2" height="32"><line x1="1" y1="0" x2="1" y2="32" stroke="#10B981" stroke-width="2" stroke-dasharray="4 3"/></svg>
+          <svg width="12" height="8" class="arch-arrow-svg"><path d="M0 0 L6 8 L12 0" fill="#10B981"/></svg>
+        </div>
+        <div class="arch-layer">
+          <div class="arch-layer-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+            <span>OrbisLoop Circular Marketplace</span>
+          </div>
+          <p class="arch-desc">Matches waste producers with recovery partners.</p>
+        </div>
+        <div class="arch-connector">
+          <svg width="2" height="32"><line x1="1" y1="0" x2="1" y2="32" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 3"/></svg>
+          <svg width="12" height="8" class="arch-arrow-svg"><path d="M0 0 L6 8 L12 0" fill="#0EA5E9"/></svg>
+        </div>
+        <div class="arch-layer">
+          <div class="arch-layer-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            <span>Smart Logistics Coordination Layer</span>
+          </div>
+          <p class="arch-desc">Optimizes pickup routes and recovery destinations.</p>
+        </div>
+        <div class="arch-connector">
+          <svg width="2" height="32"><line x1="1" y1="0" x2="1" y2="32" stroke="#0EA5E9" stroke-width="2" stroke-dasharray="4 3"/></svg>
+          <svg width="12" height="8" class="arch-arrow-svg"><path d="M0 0 L6 8 L12 0" fill="#0EA5E9"/></svg>
+        </div>
+        <div class="arch-layer">
+          <div class="arch-layer-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span>Recyclers / Refurbishers / Recovery Partners</span>
+          </div>
+        </div>
+        <div class="arch-connector">
+          <svg width="2" height="32"><line x1="1" y1="0" x2="1" y2="32" stroke="#10B981" stroke-width="2" stroke-dasharray="4 3"/></svg>
+          <svg width="12" height="8" class="arch-arrow-svg"><path d="M0 0 L6 8 L12 0" fill="#10B981"/></svg>
+        </div>
+        <div class="arch-layer arch-bottom">
+          <div class="arch-layer-content">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            <span>New Circular Supply Chains</span>
+          </div>
+        </div>
+      </div>
+      <div class="arch-features-row fade-up">
+        <div class="arch-feature">
+          <h4>Waste Intelligence Engine</h4>
+          <p>AI predicts surplus materials and waste streams before they occur.</p>
+        </div>
+        <div class="arch-feature">
+          <h4>Circular Marketplace</h4>
+          <p>Matches waste producers with recovery partners.</p>
+        </div>
+        <div class="arch-feature">
+          <h4>Smart Logistics Layer</h4>
+          <p>Optimizes pickup routes and recovery destinations.</p>
+        </div>
+        <div class="arch-feature">
+          <h4>Impact Certification</h4>
+          <p>Generates verified sustainability metrics for ESG reporting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRY FOCUS ===== -->
+  <section class="section section-white" id="industry-focus">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Focus</span>
+        <h2 class="section-title">Starting With Supermarkets</h2>
+      </div>
+      <div class="industry-content fade-up">
+        <div class="industry-text">
+          <p>Supermarkets generate daily streams of surplus food, plastic packaging, and cardboard waste.</p>
+          <p>OrbisLoop begins by transforming these waste streams into circular supply chains — before expanding into manufacturing, electronics, and industrial materials.</p>
+        </div>
+        <div class="industry-highlights">
+          <div class="industry-item">
+            <div class="industry-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <h4>Daily Surplus</h4>
+              <p>Predictable daily waste generation</p>
+            </div>
+          </div>
+          <div class="industry-item">
+            <div class="industry-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            </div>
+            <div>
+              <h4>Real-Time Tracking</h4>
+              <p>Full visibility into waste recovery</p>
+            </div>
+          </div>
+          <div class="industry-item">
+            <div class="industry-item-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <div>
+              <h4>Industry Expansion</h4>
+              <p>From supermarkets to global industries</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MARKET OPPORTUNITY ===== -->
+  <section class="section section-dark" id="market">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag section-tag-light">Opportunity</span>
+        <h2 class="section-title section-title-light">The $4.5 Trillion Circular Economy</h2>
+      </div>
+      <div class="market-content fade-up">
+        <p>The global circular economy represents one of the largest economic transformations of the century. OrbisLoop is building the digital infrastructure layer that enables businesses to participate in this transition at scale.</p>
+      </div>
+      <div class="market-stats fade-up">
+        <div class="market-stat">
+          <span class="market-stat-number">$4.5T</span>
+          <span class="market-stat-label">Total Addressable Market</span>
+        </div>
+        <div class="market-stat">
+          <span class="market-stat-number">12%</span>
+          <span class="market-stat-label">Annual Growth Through 2030</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EARLY ECOSYSTEM PARTNERS ===== -->
+  <section class="section section-white" id="partners">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag">Network</span>
+        <h2 class="section-title">Early Ecosystem Partners</h2>
+      </div>
+      <p class="partners-intro fade-up">OrbisLoop is building its first circular recovery network with forward-thinking partners across retail, recycling, and logistics.</p>
+      <div class="partners-grid fade-up">
+        <div class="partner-card">
+          <div class="partner-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Supermarkets</h3>
+          <p>Retail chains committed to surplus recovery</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.3"/></svg>
+          </div>
+          <h3>Recycling Networks</h3>
+          <p>Recovery and processing partners</p>
+        </div>
+        <div class="partner-card">
+          <div class="partner-icon">
+            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <h3>Logistics Providers</h3>
+          <p>Smart pickup and routing networks</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WAITLIST / COMING SOON ===== -->
+  <section class="section section-gradient" id="waitlist">
+    <div class="container">
+      <div class="section-header fade-up">
+        <span class="section-tag section-tag-light">Coming Soon</span>
+        <h2 class="section-title section-title-light">Launching Soon</h2>
+      </div>
+      <div class="waitlist-content fade-up">
+        <p>OrbisLoop is currently building the first intelligent infrastructure for circular supply chains.</p>
+        <p>Join the waitlist to get early access and partnership opportunities.</p>
+      </div>
+      <div class="waitlist-form-wrapper fade-up">
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/faithyomokhudu"
+          method="post"
+          class="waitlist-form"
+          id="waitlist-form"
+        >
+          <div class="form-group">
+            <label for="bd-email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="bd-email"
+              placeholder="you@company.com"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="role">Your Role</label>
+            <select name="tag" id="role" required>
+              <option value="" disabled selected>Select your role</option>
+              <option value="Business">Business</option>
+              <option value="Recycler">Recycler</option>
+              <option value="Logistics Partner">Logistics Partner</option>
+              <option value="Investor">Investor</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-form">
+            <span>Join Waitlist</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+        </form>
+        <div class="form-success" id="form-success" style="display: none;">
+          <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          <h3>You're on the list!</h3>
+          <p>Thank you for joining the OrbisLoop waitlist. We'll be in touch soon.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PILOT PROGRAM ===== -->
+  <section class="section section-white" id="pilot">
+    <div class="container">
+      <div class="pilot-content fade-up">
+        <div class="section-header">
+          <span class="section-tag">Pilot</span>
+          <h2 class="section-title">Apply for Pilot Program</h2>
+        </div>
+        <p>We are currently onboarding early pilot partners in the supermarket and recycling sectors.</p>
+        <button class="btn btn-primary btn-large" id="pilot-toggle-btn">
+          Apply as Pilot Partner
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </button>
+        <div class="pilot-form-wrapper" id="pilot-form-wrapper" style="display: none;">
+          <form
+            action="https://buttondown.com/api/emails/embed-subscribe/faithyomokhudu"
+            method="post"
+            class="pilot-form"
+            id="pilot-form"
+          >
+            <div class="pilot-form-row">
+              <div class="form-group-pilot">
+                <label for="pilot-name">Full Name</label>
+                <input type="text" name="metadata.name" id="pilot-name" placeholder="Your name" required />
+              </div>
+              <div class="form-group-pilot">
+                <label for="pilot-email">Email Address</label>
+                <input type="email" name="email" id="pilot-email" placeholder="you@company.com" required />
+              </div>
+            </div>
+            <div class="pilot-form-row">
+              <div class="form-group-pilot">
+                <label for="pilot-company">Company Name</label>
+                <input type="text" name="metadata.company" id="pilot-company" placeholder="Your company" required />
+              </div>
+              <div class="form-group-pilot">
+                <label for="pilot-sector">Sector</label>
+                <select name="tag" id="pilot-sector" required>
+                  <option value="" disabled selected>Select your sector</option>
+                  <option value="Supermarket">Supermarket</option>
+                  <option value="Recycling">Recycling</option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-large btn-pilot-submit">
+              Apply as Pilot Partner
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+          <div class="pilot-form-success" id="pilot-form-success" style="display: none;">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h3>Application Submitted!</h3>
+            <p>Thank you for your interest in the OrbisLoop pilot program. We'll be in touch shortly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOUNDER QUOTE ===== -->
+  <section class="section section-light" id="founder-quote">
+    <div class="container">
+      <div class="quote-content fade-up">
+        <svg class="quote-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.3"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21z"/><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"/></svg>
+        <blockquote>
+          &ldquo;We believe the future economy will not throw materials away &mdash; it will circulate them.&rdquo;
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+
+      <!-- Top: Brand + Links -->
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#" class="footer-logo">
+            <img class="footer-logo-icon" src="public/image_3fe86ce7.png" alt="OrbisLoop logo" />
+            <span>OrbisLoop</span>
+          </a>
+          <p class="footer-tagline">Infrastructure for the Circular Economy</p>
+        </div>
+        <nav class="footer-nav">
+          <div class="footer-nav-group">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#solution">About</a></li>
+              <li><a href="mailto:hello@orbisloop.com">Contact</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4>Product</h4>
+            <ul>
+              <li><a href="#features">Features</a></li>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#waitlist">Join Waitlist</a></li>
+            </ul>
+          </div>
+          <div class="footer-nav-group">
+            <h4>Partners</h4>
+            <ul>
+              <li><a href="#pilot">Pilot Program</a></li>
+              <li><a href="mailto:partners@orbisloop.com">partners@orbisloop.com</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <!-- Middle: Built With -->
+      <div class="footer-middle">
+        <div class="built-with-items">
+          <div class="built-with-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+            <span>Modern cloud infrastructure</span>
+          </div>
+          <span class="footer-dot">&middot;</span>
+          <div class="built-with-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a7 7 0 0 1 7 7c0 3-2 5.5-4 7.5L12 20l-3-3.5C7 14.5 5 12 5 9a7 7 0 0 1 7-7z"/><circle cx="12" cy="9" r="2"/></svg>
+            <span>AI-powered material intelligence</span>
+          </div>
+          <span class="footer-dot">&middot;</span>
+          <div class="built-with-item">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Designed for global circular supply chains</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom: Copyright -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 OrbisLoop. All rights reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
