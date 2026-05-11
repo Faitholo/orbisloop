@@ -1,0 +1,62 @@
+# DigitalOcean App Platform specification
+# Deploy via: doctl apps create --spec .do/app.yaml
+# Docs: https://docs.digitalocean.com/products/app-platform/reference/app-spec/
+
+name: orbisloop-platform
+region: nyc   # Change to: ams (Amsterdam), sgp (Singapore), lon, etc.
+
+services:
+  - name: web
+    github:
+      repo: YOUR_GITHUB_ORG/orbisloop   # <-- update this
+      branch: main
+      deploy_on_push: true
+    source_dir: platform
+    build_command: npm run build
+    run_command: npm start
+    http_port: 3000
+    instance_count: 1
+    instance_size_slug: apps-s-1vcpu-0.5gb  # Starter — upgrade for production
+
+    envs:
+      - key: NODE_ENV
+        value: production
+        scope: RUN_AND_BUILD_TIME
+
+      - key: NEXT_PUBLIC_APP_URL
+        value: https://app.orbisloop.com
+        scope: RUN_AND_BUILD_TIME
+
+      - key: DATABASE_URL
+        scope: RUN_AND_BUILD_TIME
+        type: SECRET   # Set in DO console or via: doctl apps update
+
+      - key: BETTER_AUTH_SECRET
+        scope: RUN_TIME
+        type: SECRET
+
+      - key: BETTER_AUTH_URL
+        value: https://app.orbisloop.com
+        scope: RUN_TIME
+
+      - key: RESEND_API_KEY
+        scope: RUN_TIME
+        type: SECRET
+
+    routes:
+      - path: /
+
+domains:
+  - domain: app.orbisloop.com
+    type: PRIMARY
+
+# Static landing page (optional — only if you move index.html into DO too)
+# static_sites:
+#   - name: landing
+#     github:
+#       repo: YOUR_GITHUB_ORG/orbisloop
+#       branch: main
+#       deploy_on_push: true
+#     output_dir: /           # root-level index.html
+#     routes:
+#       - path: /

@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: orbisloop_db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: orbisloop
+      POSTGRES_USER: orbisloop
+      POSTGRES_PASSWORD: orbisloop
+    ports:
+      - "5432:5432"
+    volumes:
+      - orbisloop_pgdata:/var/lib/postgresql/data
+
+volumes:
+  orbisloop_pgdata:
