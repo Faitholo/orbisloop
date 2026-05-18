@@ -2,34 +2,71 @@
 
 **Infrastructure for the Circular Economy**
 
-OrbisLoop is a digital infrastructure platform transforming global waste into high-value circular supply chains. This repository contains the static landing page for [orbisloop.com](https://orbisloop.com).
+OrbisLoop is a digital infrastructure platform transforming global waste into high-value circular supply chains. This repository contains the public-facing site, product concepts, and technical research that support the OrbisLoop platform direction.
 
 ---
 
-## Overview
+## Repository Overview
 
-A modern, responsive, single-page website built with:
+This repository now serves two purposes:
 
-- **HTML5** — semantic, accessible markup
-- **CSS3** — custom properties, flexbox, grid, animations
-- **Vanilla JavaScript** — scroll animations, counters, form handling
-- No frameworks, no build step, no backend required
+1. **Public web presence** — the landing page and related frontend assets.
+2. **AI infrastructure thesis** — research documents that explain how OrbisLoop can evolve into an intelligence layer for circular supply chains.
 
 ---
 
 ## Project Structure
 
-```
-├── index.html      # Main landing page
-├── styles.css      # All styles
-├── script.js       # Minimal JavaScript
-├── README.md       # This file
-└── public/         # Static assets (if any)
+```text
+├── index.html                  # Main landing page
+├── styles.css                  # Site styling
+├── script.js                   # Minimal JavaScript interactions
+├── public/                     # Static assets
+├── app/                        # Next.js application prototype
+├── platform/                   # Platform prototype / service workspace
+├── research/                   # AI infrastructure direction and technical proof
+│   ├── README.md
+│   ├── system-architecture.md
+│   ├── ai-roadmap.md
+│   ├── computer-vision-workflow.md
+│   └── forecasting-routing-simulation.ipynb
+└── README.md                   # Repository overview
 ```
 
 ---
 
-## Sections
+## Core Product Direction
+
+OrbisLoop is positioned as **infrastructure for the circular economy**.
+
+The platform direction is to connect material producers, aggregators, logistics operators, processors, and enterprise buyers through shared operational intelligence. Over time, the platform can support:
+
+- material visibility across circular supply chains
+- reverse logistics coordination
+- contamination and quality detection
+- forecasting of waste streams and recovery volumes
+- optimization of pickup, routing, and processing decisions
+- measurement of circularity and diversion outcomes
+
+---
+
+## AI Infrastructure Direction
+
+The `research/` folder captures how OrbisLoop can mature from a digital platform into an **AI-enabled operating system for circular supply chains**.
+
+Included artifacts:
+
+- **System architecture diagram** — platform and ML system boundaries
+- **AI roadmap** — staged path from analytics to automation
+- **Sample computer vision workflow** — material classification and contamination detection
+- **Forecasting/routing simulation notebook** — operational optimization proof-of-concept
+- **AI infrastructure README** — narrative explaining the direction
+
+This material is designed to make the repository a stronger public proof point for product strategy, systems thinking, and applied AI.
+
+---
+
+## Existing Site Sections
 
 | Section | Description |
 |---------|-------------|
@@ -42,24 +79,26 @@ A modern, responsive, single-page website built with:
 | Platform Diagram | Horizontal material flow |
 | Technology Architecture | Layered backend architecture diagram |
 | Industry Focus | Supermarket-first strategy |
-| Market Opportunity | $4.5T circular economy TAM |
+| Market Opportunity | Circular economy opportunity framing |
 | Early Partners | Partner category cards |
-| Waitlist | Email signup form (Buttondown) |
+| Waitlist | Email signup form |
 | Pilot Program | CTA for pilot applications |
-| Founder Quote | Inspirational quote |
-| Footer | Links, built-with section, copyright |
+| Founder Quote | Vision statement |
+| Footer | Links and attribution |
 
 ---
 
 ## Waitlist Integration
 
-The waitlist form submits to [Buttondown](https://buttondown.email/) at:
+The waitlist form submits to Buttondown using the configured OrbisLoop embed endpoint in `index.html`.
 
-```
-https://buttondown.email/api/emails/embed-subscribe/orbisloop
-```
+To use a different Buttondown account, replace the configured username in the form action URL.
 
-To use your own Buttondown account, replace `orbisloop` in the form action URL with your Buttondown username.
+---
+
+## Notes
+
+The materials in `research/` are intentionally lightweight, public-facing technical documents. They are meant to communicate architecture, product thinking, and AI direction rather than represent production-ready ML systems.
 
 ---
 
